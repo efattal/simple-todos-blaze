@@ -1,0 +1,88 @@
+{
+  "compilerOptions": {
+    "checkJs": true,
+    "allowJs": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "/*": [
+        "./*"
+      ],
+      "meteor/mongo": [
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/mongo/1.16.10/web.browser/local_collection_driver.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/mongo/1.16.10/web.browser/collection.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/mongo/1.16.10/web.browser/connection_options.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/mongo/1.16.10/web.browser/doc_fetcher.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/mongo/1.16.10/web.browser/mongo_driver.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/mongo/1.16.10/web.browser/mongo_utils.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/mongo/1.16.10/web.browser/observe_multiplex.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/mongo/1.16.10/web.browser/oplog_observe_driver.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/mongo/1.16.10/web.browser/oplog_tailing.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/mongo/1.16.10/web.browser/oplog_v2_converter.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/mongo/1.16.10/web.browser/polling_observe_driver.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/mongo/1.16.10/web.browser/remote_collection_driver.js"
+      ],
+      "meteor/jquery": [
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/jquery/3.0.0/web.browser/main.js"
+      ],
+      "meteor/reactive-var": [
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/reactive-var/1.0.12/web.browser/reactive-var.js"
+      ],
+      "meteor/tracker": [
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/tracker/1.3.3/web.browser/tracker.js"
+      ],
+      "meteor/es5-shim": [
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/es5-shim/4.8.0/web.browser/client.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/es5-shim/4.8.0/web.browser/console.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/es5-shim/4.8.0/web.browser/cordova.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/es5-shim/4.8.0/web.browser/export_globals.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/es5-shim/4.8.0/web.browser/import_globals.js"
+      ],
+      "meteor/ecmascript": [
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/ecmascript/0.16.8/web.browser/ecmascript.js"
+      ],
+      "meteor/shell-server": [
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/shell-server/0.5.0/web.browser/main.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/shell-server/0.5.0/web.browser/shell-server.js"
+      ],
+      "meteor/hot-module-replacement": [
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/hot-module-replacement/0.5.3/web.browser/hot-api.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/hot-module-replacement/0.5.3/web.browser/client.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/hot-module-replacement/0.5.3/web.browser/server.js"
+      ],
+      "meteor/blaze-hot": [
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/blaze-hot/1.1.2/web.browser/hot.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/blaze-hot/1.1.2/web.browser/update-templates.js"
+      ],
+      "meteor/dev-error-overlay": [
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/dev-error-overlay/0.1.2/web.browser/client.js"
+      ],
+      "meteor/reactive-dict": [
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/reactive-dict/1.3.1/web.browser/migration.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/reactive-dict/1.3.1/web.browser/reactive-dict.js"
+      ],
+      "meteor/accounts-password": [
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/accounts-password/2.4.0/web.browser/password_client.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/accounts-password/2.4.0/web.browser/email_templates.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/accounts-password/2.4.0/web.browser/password_server.js"
+      ],
+      "meteor/meteortesting:mocha": [
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/meteortesting_mocha/2.1.0/web.browser/client.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/meteortesting_mocha/2.1.0/web.browser/browser-shim.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/meteortesting_mocha/2.1.0/web.browser/prepForHTMLReporter.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/meteortesting_mocha/2.1.0/web.browser/runtimeArgs.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/meteortesting_mocha/2.1.0/web.browser/server.handleCoverage.js",
+        "C:\\Users\\efatt\\AppData\\Local/.meteor/packages/meteortesting_mocha/2.1.0/web.browser/server.js"
+      ]
+    }
+  },
+  "typeAcquisition": {
+    "include": [
+      "meteor"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    ".meteor"
+  ]
+}

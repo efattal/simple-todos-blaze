@@ -1,0 +1,11 @@
+<template name="task">
+    <li>
+        <input type="checkbox" checked="{{isChecked}}" class="toggle-checked" />
+        <span>{{text}}{{> date createdAt}}</span>
+        <button class="delete">&times;</button>
+    </li>
+</template>
+
+<template name="date">
+    <span class="date">{{creationDate}}</span>
+</template> 
