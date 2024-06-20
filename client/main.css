@@ -20,10 +20,13 @@ button {
   font-weight: bold;
   font-size: 1em;
   border: none;
-  color: white;
   box-shadow: 0 3px 3px rgba(34, 25, 25, 0.4);
   padding: 5px;
   cursor: pointer;
+}
+
+button:not(:disabled) {
+  color: white;
 }
 
 button:focus {
@@ -82,7 +85,7 @@ header {
   margin: 16px;
 }
 
-.task-form > input {
+.task-form>input {
   flex-grow: 1;
   box-sizing: border-box;
   padding: 10px 6px;
@@ -93,13 +96,16 @@ header {
   margin-right: 16px;
 }
 
-.task-form > input:focus {
+.task-form>input:focus {
   outline: 0;
 }
 
-.task-form > button {
+.task-form>button {
   min-width: 100px;
   height: 95%;
+}
+
+.task-form>button:not(:disabled) {
   background-color: #315481;
 }
 
@@ -112,7 +118,7 @@ header {
   margin-block-end: 0;
 }
 
-.tasks > li {
+.tasks>li {
   display: flex;
   padding: 16px;
   border-bottom: #eee solid 1px;
@@ -120,11 +126,11 @@ header {
   gap: .5em;
 }
 
-.tasks > li > span {
+.tasks>li>span {
   flex-grow: 1;
 }
 
-.tasks > li > button {
+.tasks>li>button {
   justify-self: flex-end;
   background-color: #ff3046;
 }
@@ -140,7 +146,7 @@ header {
   gap: 1em;
 }
 
-.filter > button {
+.filter>button:not(:disabled) {
   background-color: #62807e;
 }
 
@@ -153,15 +159,15 @@ header {
   align-items: center;
 }
 
-.login-form > div {
+.login-form>div {
   margin: 8px;
 }
 
-.login-form > div > label {
+.login-form>div>label {
   font-weight: bold;
 }
 
-.login-form > div  > input {
+.login-form>div>input {
   flex-grow: 1;
   box-sizing: border-box;
   padding: 10px 6px;
@@ -173,23 +179,23 @@ header {
   margin-top: 4px;
 }
 
-.login-form > div > input:focus {
+.login-form>div>input:focus {
   outline: 0;
 }
 
-.login-form > div > button {
+.login-form>div>button {
   background-color: #62807e;
 }
 
 .user {
   display: flex;
+  align-items: center;
+  gap: .5em;
 
   align-self: flex-end;
 
   margin: 8px 16px 0;
   font-weight: bold;
-
-  cursor: pointer;
 }
 
 .loading {
@@ -201,4 +207,8 @@ header {
   align-items: center;
 
   font-weight: bold;
+}
+
+.error {
+  color: #d00;
 }

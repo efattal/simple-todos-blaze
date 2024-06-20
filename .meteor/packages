@@ -26,3 +26,5 @@ dev-error-overlay
 reactive-dict
 accounts-password
 meteortesting:mocha
+accounts-google
+service-configuration

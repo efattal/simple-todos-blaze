@@ -15,6 +15,17 @@ const SEED_USERNAME = 'meteorite';
 const SEED_PASSWORD = 'password';
 
 Meteor.startup(() => {
+  ServiceConfiguration.configurations.upsert(
+    { service: "google" },
+    {
+      $set: {
+        loginStyle: "popup",
+        clientId: Meteor.settings.google.clientId, 
+        secret: Meteor.settings.google.secret
+      },
+    }
+  );
+
   if (!Accounts.findUserByUsername(SEED_USERNAME)) {
     Accounts.createUser({
       username: SEED_USERNAME,
@@ -35,4 +46,11 @@ Meteor.startup(() => {
       'Seventh Task',
     ].forEach(taskText => insertTask(taskText, user));
   }
+});
+
+Accounts.onCreateUser(function(options,user){
+  if (typeof(user.services.google) != "undefined") {
+      user.username = user.services.google.email;
+  }
+  return user;
 });

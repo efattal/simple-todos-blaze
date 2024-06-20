@@ -1,5 +1,9 @@
 <template name="login">
     <form class="login-form">
+        {{#if getError}}
+            <div class="error">{{getError}}</div>
+        {{/if}}
+        
         <div>
             <label htmlFor="username">Username</label>
 
@@ -21,8 +25,21 @@
                     required
             />
         </div>
-        <div>
-            <button type="submit">Log In</button>
-        </div>
+        {{#if isRegistering}}
+            <div>
+                <button type="submit">Save</button>
+                <button id="cancel">Cancel</button>
+            </div>
+        {{else}}
+            <div>
+                <button type="submit">Log In</button>
+                <a id="register" href="#">Register</a>
+            </div>
+            <div>
+                <button id="loginGoogle">
+                    Log in with Google
+                </button>
+            </div>
+        {{/if}}
     </form>
 </template>
