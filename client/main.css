@@ -23,6 +23,9 @@ button {
   box-shadow: 0 3px 3px rgba(34, 25, 25, 0.4);
   padding: 5px;
   cursor: pointer;
+  display: inline-flex;
+  min-width: 0;
+  align-items: center;
 }
 
 button:not(:disabled) {
@@ -31,6 +34,11 @@ button:not(:disabled) {
 
 button:focus {
   outline: 0;
+}
+
+button svg {
+  max-width: 24px;
+  max-height: 24px;
 }
 
 .app {

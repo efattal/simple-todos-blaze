@@ -114,7 +114,7 @@ Template.form.helpers({
 })
 
 Template.form.events({
-  "keyup input"(e, instance){
+  "input input"(e, instance){
     instance.state.set(TASK_EMPTY_STRING, e.target.value === "")
   },
   "submit .task-form"(e) {
